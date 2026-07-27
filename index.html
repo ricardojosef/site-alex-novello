@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Novello — Mentoria para Líderes do Agronegócio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- textura de grão sutil -->
+<svg class="noise-def" width="0" height="0">
+  <filter id="grain">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+    <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/>
+  </filter>
+</svg>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="nav-logo">
+      <img src="images/logo.png" alt="Alex Novello" class="logo-white">
+      <img src="images/logo-green.png" alt="Alex Novello" class="logo-green">
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#sobre">Quem sou eu</a>
+      <a href="#metodo">Método A.G.R.O.</a>
+      <a href="#mentorias">Mentorias</a>
+      <a href="#depoimentos">Depoimentos</a>
+    </nav>
+    <a href="#cta" class="btn btn-nav">Quero dar o próximo passo</a>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-rows" aria-hidden="true">
+    <svg viewBox="0 0 1440 800" preserveAspectRatio="none" class="rows-svg">
+      <path class="row-path" d="M-100,780 C 200,700 350,850 700,760 S 1200,650 1600,760" />
+      <path class="row-path" d="M-100,700 C 200,620 350,770 700,680 S 1200,570 1600,680" />
+      <path class="row-path" d="M-100,620 C 200,540 350,690 700,600 S 1200,490 1600,600" />
+      <path class="row-path" d="M-100,540 C 200,460 350,610 700,520 S 1200,410 1600,520" />
+    </svg>
+  </div>
+
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow reveal-up">Mentoria para líderes do agronegócio</p>
+      <h1 class="reveal-up">
+        Se a sua empresa <em>depende de você</em> pra funcionar, ela ainda não é uma empresa.
+      </h1>
+      <p class="hero-sub reveal-up">
+        É uma operação que você carrega nas costas. Eu ajudo donos, gestores e líderes do agro a sair do operacional, formar equipes que funcionam sem depender deles o tempo todo — e lucrar mais, com mais controle e menos culpa.
+      </p>
+      <div class="hero-actions reveal-up">
+        <a href="#cta" class="btn btn-primary">Quero dar o próximo passo</a>
+        <div class="hero-badge">
+          <span class="hero-badge-num">+20</span>
+          <span class="hero-badge-text">anos em alta gestão<br>no agronegócio</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-media reveal-scale">
+      <div class="hero-media-shape"></div>
+      <img src="images/newalexhero (1).png" alt="Alex Novello em campo de plantação" class="hero-photo">
+      <div class="hero-tag hero-tag-1">Método A.G.R.O.</div>
+      <div class="hero-tag hero-tag-2">O Real do Agro</div>
+    </div>
+  </div>
+
+  <a href="#beneficios" class="scroll-cue" aria-label="Rolar para baixo">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ BENEFÍCIOS ============ -->
+<section class="section section-cream" id="beneficios">
+  <div class="wrap">
+    <p class="eyebrow reveal-up">O que muda na sua operação</p>
+    <h2 class="section-title reveal-up">Menos improviso. Mais comando. <em>Mais resultado.</em></h2>
+
+    <div class="stat-row reveal-up">
+      <div class="stat">
+        <span class="stat-num" data-count="4.1" data-suffix="%">0%</span>
+        <span class="stat-label">de ganho médio de margem<br>na última linha</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="21" data-suffix="%">0%</span>
+        <span class="stat-label">de crescimento possível<br>na carteira atual</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-num" data-count="1" data-suffix="%" data-prefix="&lt;">0%</span>
+        <span class="stat-label">de inadimplência<br>com gestão de verdade</span>
+      </div>
+    </div>
+
+    <div class="benefit-grid">
+      <div class="benefit-card">
+        <svg class="benefit-icon" viewBox="0 0 48 48"><path d="M24 6 C15 6 9 13 9 21 C9 30 15 36 24 42 C33 36 39 30 39 21 C39 13 33 6 24 6 Z" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="24" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        <h3>Equipe que funciona sem você por perto</h3>
+        <p>Sua operação para de travar toda vez que você viaja, adoece ou simplesmente tira um dia de folga.</p>
+      </div>
+      <div class="benefit-card">
+        <svg class="benefit-icon" viewBox="0 0 48 48"><path d="M8 38 L16 24 L24 30 L32 14 L40 22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 14 L40 14 L40 22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Mais lucro, com mais autonomia</h3>
+        <p>Crescimento previsível e margem mais forte, sem precisar trabalhar mais horas pra conseguir.</p>
+      </div>
+      <div class="benefit-card">
+        <svg class="benefit-icon" viewBox="0 0 48 48"><circle cx="16" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="32" cy="16" r="5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M8 40 C8 32 12 28 16 28 C20 28 24 32 24 40" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M24 40 C24 32 28 28 32 28 C36 28 40 32 40 40" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        <h3>Líderes formados dentro da equipe</h3>
+        <p>Gestão que se multiplica: pessoas preparadas pra decidir, não só pra executar ordens.</p>
+      </div>
+      <div class="benefit-card">
+        <svg class="benefit-icon" viewBox="0 0 48 48"><path d="M24 8 L24 20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="24" cy="28" r="14" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M18 28 L23 33 L31 23" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Resultado sem culpa</h3>
+        <p>Uma rotina mais leve pra você — o que eu chamo de <em>O Real do Agro</em>: gestão de verdade, sem peso nas costas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXA DE FUNDO 1: PLANTAÇÃO ============ -->
+<section class="field-band" style="background-image:url('images/bg-plantacao-1.jpg')">
+  <div class="field-band-scrim"></div>
+  <div class="wrap field-band-inner reveal-up">
+    <p class="eyebrow eyebrow-light">No campo, todo dia</p>
+    <p class="field-band-quote">Do plantio à colheita, cada decisão de gestão aparece no resultado final.</p>
+  </div>
+</section>
+
+<!-- ============ QUEM SOU EU ============ -->
+<section class="section section-dark" id="sobre">
+  <div class="wrap about-inner">
+    <div class="about-media reveal-scale">
+      <img src="images/alex-about.png" alt="Alex Novello sorrindo em plantação">
+      <div class="about-media-frame"></div>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow eyebrow-light reveal-up">Quem sou eu</p>
+      <h2 class="section-title title-light reveal-up">Prazer, eu sou o <em>Alex.</em></h2>
+      <p class="about-text reveal-up">
+        Empreendedor e mentor especialista no agronegócio, com 20 anos de experiência em alta gestão no agro. Minha jornada me ensinou que o verdadeiro sucesso vem de uma liderança forte, uma equipe engajada e uma operação que funciona de forma autônoma — e é exatamente isso que eu quero compartilhar com você.
+      </p>
+      <ul class="about-list reveal-up">
+        <li>Criador do <strong>Método A.G.R.O.</strong>, uma metodologia prática e focada em resultado para líderes do agro</li>
+        <li>Palestrante e treinador profissional, levando insights práticos para equipes e empresários do setor</li>
+        <li>Pai do Enzo, esposo da Angela, apaixonado por viagens, futebol e vinhos — e pai orgulhoso de três pets: Cacau, Nutella e Mel</li>
+        <li>Um leitor voraz, sempre em busca de novos aprendizados para aplicar no trabalho</li>
+      </ul>
+
+      <div class="values reveal-up">
+        <p class="values-label">Meus valores</p>
+        <div class="value-tags">
+          <span>Verdade</span><span>Lealdade</span><span>Família</span><span>Coragem</span>
+          <span>Justiça</span><span>Otimismo</span><span>Ânimo</span><span>Persistência</span><span>Trabalho</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA / MENTORIAS ============ -->
+<section class="section section-cream" id="mentorias">
+  <div class="wrap">
+    <p class="eyebrow reveal-up">Como funciona</p>
+    <h2 class="section-title reveal-up">Dois caminhos. <em>Um mesmo destino:</em> sua empresa funcionando sem você carregá-la sozinho.</h2>
+
+    <div class="mentor-grid">
+      <div class="mentor-card">
+        <img src="images/Alex4.png" alt="Alex Novello palestrando" class="mentor-img">
+        <div class="mentor-body">
+          <span class="mentor-tag">Em grupo</span>
+          <h3>Mentoria Agro Legacy</h3>
+          <p>Um programa de gestão para donos e gestores do agro que querem construir um legado — não só administrar o dia a dia. Você constrói, junto com outros líderes do setor, os pilares de uma operação que continua de pé mesmo quando você não está por perto.</p>
+          <ul class="mentor-points">
+            <li>Diagnóstico completo da sua gestão atual</li>
+            <li>Encontros periódicos com outros líderes do agro</li>
+            <li>Aplicação prática do Método A.G.R.O. na sua realidade</li>
+          </ul>
+          <a href="#cta" class="link-cta">Quero conhecer <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="mentor-card">
+        <img src="images/Alex3.png" alt="Alex Novello em atendimento individual" class="mentor-img">
+        <div class="mentor-body">
+          <span class="mentor-tag">Individual</span>
+          <h3>Mentoria 1:1</h3>
+          <p>Acompanhamento direto e personalizado, olho no olho, para os desafios específicos da sua empresa ou fazenda. Ideal para quem precisa de decisões rápidas, plano de ação sob medida e um parceiro de confiança para pensar a gestão junto.</p>
+          <ul class="mentor-points">
+            <li>Agenda dedicada só para o seu negócio</li>
+            <li>Plano de ação construído sob medida</li>
+            <li>Suporte direto entre os encontros</li>
+          </ul>
+          <a href="#cta" class="link-cta">Quero conhecer <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MÉTODO A.G.R.O. ============ -->
+<section class="section section-forest" id="metodo">
+  <div class="wrap">
+    <p class="eyebrow eyebrow-light reveal-up">A metodologia</p>
+    <h2 class="section-title title-light reveal-up">O Método <em>A.G.R.O.</em></h2>
+    <p class="method-lead reveal-up">Três pilares práticos para tirar você do operacional e colocar sua empresa no caminho do crescimento sustentável.</p>
+
+    <div class="method-grid">
+      <div class="method-card">
+        <span class="method-letter">01</span>
+        <h3>Equipe Autossuficiente no Agro</h3>
+        <p>Criação de times que operam sem a sua dependência constante — pessoas preparadas para tocar a operação com autonomia real.</p>
+      </div>
+      <div class="method-card">
+        <span class="method-letter">02</span>
+        <h3>Delegando para Liberdade</h3>
+        <p>Liberação do operacional para você focar no que realmente importa: estratégia, expansão e visão de longo prazo.</p>
+      </div>
+      <div class="method-card">
+        <span class="method-letter">03</span>
+        <h3>Lucro & Diferenciação</h3>
+        <p>Crescimento previsível e sustentável, com margem mais forte e uma empresa que se destaca no seu mercado.</p>
+      </div>
+    </div>
+
+    <div class="method-stake reveal-up">
+      <span class="stake-letter">A<em>utossuficiente</em></span>
+      <span class="stake-dot">·</span>
+      <span class="stake-letter">G<em>estão</em></span>
+      <span class="stake-dot">·</span>
+      <span class="stake-letter">R<em>esultado</em></span>
+      <span class="stake-dot">·</span>
+      <span class="stake-letter">O<em>peração livre</em></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAIXA DE FUNDO 2: PLANTAÇÃO ============ -->
+<section class="field-band field-band-2" style="background-image:url('images/bg-plantacao-2.jpg')">
+  <div class="field-band-scrim"></div>
+  <div class="wrap field-band-inner reveal-up">
+    <p class="eyebrow eyebrow-light">No dia a dia da operação</p>
+    <p class="field-band-quote">Resultado que se vê no campo — e se confere no caixa no fim do mês.</p>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS ============ -->
+<section class="section section-cream" id="depoimentos">
+  <div class="wrap">
+    <p class="eyebrow reveal-up">Depoimentos</p>
+    <h2 class="section-title reveal-up">Quem já saiu do operacional <em>tem o que contar.</em></h2>
+
+    <div class="testi-grid">
+      <div class="testi-card">
+        <p class="testi-quote">“Eu era o gargalo da minha própria empresa. Depois da mentoria, minha equipe passou a tomar decisões que antes só eu tomava — e a operação não trava mais quando eu viajo.”</p>
+        <div class="testi-author">
+          <span class="testi-name">Produtor rural</span>
+          <span class="testi-role">Mato Grosso</span>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">“O Método A.G.R.O. trouxe clareza pra algo que eu sentia mas não sabia nomear: eu confundia estar ocupado com estar gerindo. Hoje sei exatamente quanto a propriedade lucra por hectare.”</p>
+        <div class="testi-author">
+          <span class="testi-name">Gestor de fazenda</span>
+          <span class="testi-role">Goiás</span>
+        </div>
+      </div>
+      <div class="testi-card">
+        <p class="testi-quote">“Nossa revenda vendia mais e lucrava menos, e eu não conseguia enxergar onde estava o problema. A mentoria 1:1 destravou isso em poucos meses.”</p>
+        <div class="testi-author">
+          <span class="testi-name">Diretor de revenda agro</span>
+          <span class="testi-role">Paraná</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="cta-final" id="cta">
+  <div class="hero-rows cta-rows" aria-hidden="true">
+    <svg viewBox="0 0 1440 400" preserveAspectRatio="none" class="rows-svg">
+      <path class="row-path" d="M-100,380 C 200,320 350,440 700,380 S 1200,300 1600,380" />
+      <path class="row-path" d="M-100,320 C 200,260 350,380 700,320 S 1200,240 1600,320" />
+      <path class="row-path" d="M-100,260 C 200,200 350,320 700,260 S 1200,180 1600,260" />
+    </svg>
+  </div>
+  <div class="wrap cta-inner">
+    <img src="images/Alex1.png" alt="Alex Novello" class="cta-photo reveal-scale">
+    <div class="cta-copy">
+      <p class="eyebrow eyebrow-light reveal-up">O Real do Agro</p>
+      <h2 class="cta-title reveal-up">Sua empresa não precisa <em>depender de você</em> para crescer.</h2>
+      <p class="cta-sub reveal-up">Dê o primeiro passo para sair do operacional, formar uma equipe autossuficiente e liderar de verdade — com leveza e sem culpa.</p>
+      <a href="#" class="btn btn-primary btn-lg reveal-up">Quero dar o próximo passo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a href="#top" class="footer-logo">
+      <img src="images/logo.png" alt="Alex Novello">
+    </a>
+    <nav class="footer-links">
+      <a href="#sobre">Quem sou eu</a>
+      <a href="#metodo">Método A.G.R.O.</a>
+      <a href="#mentorias">Mentorias</a>
+      <a href="#depoimentos">Depoimentos</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="LinkedIn">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© 2026 Alex Novello — Mentor de empresários e gestores do agronegócio. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
